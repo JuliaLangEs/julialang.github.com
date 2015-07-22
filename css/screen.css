@@ -29,7 +29,7 @@ img {
     margin-bottom: 32px;
     border-bottom: 1px solid #ddd;
   }
-  #site .links p {
+  p.links {
         text-align: center;
   }
   #site .footer {
