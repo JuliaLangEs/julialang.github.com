@@ -25,10 +25,12 @@ img {
     font-weight: bold;
   }
   #site .links {
-    text-align: center;
     padding-bottom: 8px;
     margin-bottom: 32px;
     border-bottom: 1px solid #ddd;
+  }
+  #site .links.p {
+        text-align: center;
   }
   #site .footer {
     text-align: center;
