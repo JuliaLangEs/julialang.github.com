@@ -30,6 +30,9 @@ img {
     margin-bottom: 32px;
     border-bottom: 1px solid #ddd;
   }
+  #site p.links {
+    text-align: center;
+  }
   #site .footer {
     text-align: center;
     margin-top: 32px;
@@ -86,10 +89,14 @@ ul {
   margin-left: 1.8em;
 }
 
-  .figure p.note { 
-    font-size: 75%;
-    text-align: center;
-  }
+.figure p.caption { 
+  text-align: center;
+}
+
+.figure p.note { 
+  font-size: 75%;
+  text-align: center;
+}
 
 hr {
   margin: 40px 0 10px 0;
@@ -243,7 +250,7 @@ blockquote {
 .downloads td {
   text-align: center;
   width: 25%;
-}
+}fi
 .downloads th {
   padding: 0 5px;
 }
