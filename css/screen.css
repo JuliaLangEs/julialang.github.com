@@ -86,10 +86,10 @@ ul {
   margin-left: 1.8em;
 }
 
-.figure {
-  text-align: center;
-}
-  .figure p.note { font-size: 75%; }
+  .figure p.note { 
+    font-size: 75%;
+    text-align: center;
+  }
 
 hr {
   margin: 40px 0 10px 0;
