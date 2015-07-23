@@ -30,9 +30,6 @@ img {
     margin-bottom: 32px;
     border-bottom: 1px solid #ddd;
   }
-  p.links {
-    text-align: center;
-  }
   #site .footer {
     text-align: center;
     margin-top: 32px;
@@ -71,6 +68,10 @@ p {
   text-align: justify;
 }
 
+p.links {
+  text-align: center;
+}
+  
 a {
   text-decoration: none;
   color: #2749b0;
