@@ -24,7 +24,7 @@ img {
   #site .title {
     font-weight: bold;
   }
-  #site .links p {
+  #site .links {
     text-align: center;
     padding-bottom: 8px;
     margin-bottom: 32px;
