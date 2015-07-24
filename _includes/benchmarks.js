@@ -8,6 +8,8 @@
      fill="#000000"
      stroke-width="0.3"
      font-size="3.88"
+     display: block
+     margin: auto
 
      id="fig-6647def5b75c4734a84182589fc6dbd3">
 <g class="plotroot yscalable" id="fig-6647def5b75c4734a84182589fc6dbd3-element-1">
