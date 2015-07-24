@@ -116,7 +116,10 @@ hr {
     padding-left: 0.5em;
   }
 }
-
+#benchmarks_plot svg {
+  display: block
+  margin: auto
+}
 /* benchmarks table */
 
 table.benchmarks {
