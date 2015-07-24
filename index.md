@@ -49,10 +49,7 @@ The following micro-benchmark results were obtained on a single core (serial exe
 <!--
 {% include benchmarks.html %}
 -->
-{% block javascript %}
-    <script type="text/javascript">
-        {% include "scripts/benchmarks.js" %}
-    </script>
+{% include benchmarks.js %}
 {% endblock %}
 <p class="caption"><b>Figure:</b>
 benchmark times relative to C (smaller is better, C performance = 1.0).
