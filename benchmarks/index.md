@@ -5,7 +5,7 @@ title:  Julia Benchmarks
 
 <center>
 <div class="figure" style="align: center; width: 77%">
-{% include benchmarks.svg %}
+{% include benchmarks.html %}
 <p class="caption"><b>Figure:</b>
 benchmark times relative to C (smaller is better, C performance = 1.0).
 </p>
