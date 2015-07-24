@@ -116,7 +116,8 @@ hr {
     padding-left: 0.5em;
   }
 }
-#benchmarks_plot svg {
+
+#benchmarks_plot {
   display: block
   margin: auto
 }
