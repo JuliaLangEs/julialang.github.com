@@ -117,10 +117,6 @@ hr {
   }
 }
 
-#benchmarks_plot {
-  display: block
-  margin: auto
-}
 /* benchmarks table */
 
 table.benchmarks {
