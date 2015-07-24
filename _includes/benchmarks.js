@@ -8,10 +8,8 @@
      fill="#000000"
      stroke-width="0.3"
      font-size="3.88"
-     display: block
-     margin: auto
 
-     id="fig-6647def5b75c4734a84182589fc6dbd3">
+     id="benchmarks_plot">
 <g class="plotroot yscalable" id="fig-6647def5b75c4734a84182589fc6dbd3-element-1">
   <g class="guide xlabels" font-size="2.82" font-family="Georgia" fill="#6C606B" id="fig-6647def5b75c4734a84182589fc6dbd3-element-2">
     <text x="20.13" y="119.58" text-anchor="middle" visibility="visible" gadfly:scale="1.0">Fortran</text>
