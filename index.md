@@ -4,12 +4,25 @@ title:  The Julia Language
 ---
 
 Julia is a high-level, high-performance dynamic programming language for technical computing, with syntax that is familiar to users of other technical computing environments.
-It provides a sophisticated compiler, [distributed parallel execution](http://docs.julialang.org/en/release-0.3/manual/parallel-computing/), numerical accuracy, and an [extensive mathematical function library](http://docs.julialang.org/en/release-0.3/stdlib/).
-Julia's Base library, largely written in Julia itself, also integrates mature, best-of-breed open source C and Fortran libraries for [linear algebra](http://docs.julialang.org/en/release-0.3/stdlib/linalg/), [random number generation](http://docs.julialang.org/en/release-0.3/stdlib/numbers/#random-numbers), [signal processing](http://docs.julialang.org/en/release-0.3/stdlib/math/#signal-processing), and [string processing](http://docs.julialang.org/en/release-0.3/stdlib/strings/#strings).
-In addition, the Julia developer community is contributing a number of [external packages](http://pkg.julialang.org) through Julia's built-in package manager at a rapid pace. [IJulia](https://github.com/JuliaLang/IJulia.jl), a collaboration between the [IPython](http://ipython.org) and Julia communities, provides a powerful browser-based graphical notebook interface to Julia.
+It provides a sophisticated compiler, [distributed parallel execution](http://docs.julialang.org/en/stable/manual/parallel-computing/), numerical accuracy, and an [extensive mathematical function library](http://docs.julialang.org/en/stable/stdlib/).
+Julia's Base library, largely written in Julia itself, also integrates mature, best-of-breed open source C and Fortran libraries for [linear algebra](http://docs.julialang.org/en/stable/stdlib/linalg/), [random number generation](http://docs.julialang.org/en/stable/stdlib/numbers/#random-numbers), [signal processing](http://docs.julialang.org/en/stable/stdlib/math/#signal-processing), and [string processing](http://docs.julialang.org/en/stable/stdlib/strings/#strings).
+In addition, the Julia developer community is contributing a number of [external packages](http://pkg.julialang.org) through Julia's built-in package manager at a rapid pace. [IJulia](https://github.com/JuliaLang/IJulia.jl), a collaboration between the [Jupyter](http://jupyter.org) and Julia communities, provides a powerful browser-based graphical notebook interface to Julia.
 
-Julia programs are organized around [multiple dispatch](http://docs.julialang.org/en/release-0.3/manual/methods/#man-methods); by defining functions and overloading them for different combinations of argument types, which can also be user-defined.
-For a more in-depth discussion of the rationale and advantages of Julia over other systems, see the following highlights or read the [introduction](http://docs.julialang.org/en/release-0.3/manual/introduction/) in the [online manual](http://docs.julialang.org).
+<!--
+This keynote talk by Stefan Karpinski at [ODSC Boston](https://www.odsc.com/boston) (2016) on [the two language problem](https://www.youtube.com/watch?v=B9moDuSYzGo) explains much of the motivation behind Julia:
+
+<div style="text-align: center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B9moDuSYzGo" frameborder="0" allowfullscreen></iframe>
+</div>
+-->
+
+Julia programs are organized around [multiple dispatch](http://docs.julialang.org/en/stable/manual/methods/#man-methods); by defining functions and overloading them for different combinations of argument types, which can also be user-defined.
+For a more in-depth discussion of the rationale and advantages of Julia over other systems, see the following highlights or read the [introduction](http://docs.julialang.org/en/stable/manual/introduction/) in the [online manual](http://docs.julialang.org).
+
+
+JuliaCon 2016, the annual conference on Julia was held during June 21st - 25th at MIT. Below is a random video from our youtube playlist of the talks. Click on the playlist icon to check out the other videos.
+
+{% include juliacon-player-2016.html %}
 
 # A Summary of Features
 
@@ -17,15 +30,15 @@ For a more in-depth discussion of the rationale and advantages of Julia over oth
 * Dynamic type system: types for documentation, optimization, and dispatch
 * Good performance, approaching that of statically-compiled languages like C
 * Built-in package manager
-* [Lisp-like macros](http://docs.julialang.org/en/release-0.3/manual/metaprogramming/#macros) and other [metaprogramming facilities](http://docs.julialang.org/en/release-0.3/manual/metaprogramming/)
+* [Lisp-like macros](http://docs.julialang.org/en/stable/manual/metaprogramming/#macros) and other [metaprogramming facilities](http://docs.julialang.org/en/stable/manual/metaprogramming/)
 * Call Python functions: use the [PyCall](https://github.com/stevengj/PyCall.jl) package
-* [Call C functions](http://docs.julialang.org/en/release-0.3/manual/calling-c-and-fortran-code/) directly: no wrappers or special APIs
-* Powerful shell-like capabilities for [managing other processes](http://docs.julialang.org/en/release-0.3/manual/running-external-programs/)
-* Designed for [parallelism and distributed computation](http://docs.julialang.org/en/release-0.3/manual/parallel-computing/)
+* [Call C functions](http://docs.julialang.org/en/stable/manual/calling-c-and-fortran-code/) directly: no wrappers or special APIs
+* Powerful shell-like capabilities for [managing other processes](http://docs.julialang.org/en/stable/manual/running-external-programs/)
+* Designed for [parallelism and distributed computation](http://docs.julialang.org/en/stable/manual/parallel-computing/)
 * [Coroutines](http://en.wikipedia.org/wiki/Coroutine): lightweight "green" threading
-* [User-defined types](http://docs.julialang.org/en/release-0.3/manual/types/) are as fast and compact as built-ins
+* [User-defined types](http://docs.julialang.org/en/stable/manual/types/) are as fast and compact as built-ins
 * Automatic generation of efficient, specialized code for different argument types
-* Elegant and extensible [conversions and promotions](http://docs.julialang.org/en/release-0.3/manual/conversion-and-promotion/) for numeric and other types
+* Elegant and extensible [conversions and promotions](http://docs.julialang.org/en/stable/manual/conversion-and-promotion/) for numeric and other types
 * Efficient support for [Unicode](http://en.wikipedia.org/wiki/Unicode), including but not limited to [UTF-8](http://en.wikipedia.org/wiki/UTF-8)
 * [MIT licensed](https://github.com/JuliaLang/julia/blob/master/LICENSE.md): free and open source
 
@@ -40,6 +53,8 @@ To get a sense of relative performance of Julia compared to other languages that
 [Matlab/Octave](https://github.com/JuliaLang/julia/blob/master/test/perf/micro/perf.m),
 [R](https://github.com/JuliaLang/julia/blob/master/test/perf/micro/perf.R),
 [JavaScript](https://github.com/JuliaLang/julia/blob/master/test/perf/micro/perf.js),
+[Java](https://github.com/JuliaLang/julia/tree/master/test/perf/micro/java/src/main/java),
+[Lua](https://github.com/JuliaLang/julia/blob/master/test/perf/micro/perf.lua),
 [Go](https://github.com/JuliaLang/julia/blob/master/test/perf/micro/perf.go), and
 [Mathematica](https://github.com/JuliaLang/julia/blob/master/test/perf/micro/perf.nb).
 We encourage you to skim the code to get a sense for how easy or difficult numerical programming in each language is.
@@ -54,17 +69,20 @@ The following micro-benchmark results were obtained on a single core (serial exe
 benchmark times relative to C (smaller is better, C performance = 1.0).
 </p>
 <p class="note">
-C compiled by gcc 4.8.2, taking best timing from all optimization levels (-O0 through -O3).
-C, Fortran and Julia use <a href="https://github.com/xianyi/OpenBLAS">OpenBLAS</a> v0.2.12.
-The Python implementations of <tt>rand_mat_stat</tt> and <tt>rand_mat_mul</tt> use NumPy (v1.8.2) functions; the rest are pure Python implementations.<br/>
-Benchmarks can also be seen <a href="/benchmarks/">here as a plot</a> created with <a href="https://github.com/dcjones/Gadfly.jl">Gadfly</a>.
+C and Fortran compiled by gcc 5.1.1, taking best timing from all optimization levels (-O0 through -O3).
+C, Fortran, Go, and Julia use <a href="https://github.com/xianyi/OpenBLAS">OpenBLAS</a> v0.2.14.
+Python 3 was installed from the <a href="https://www.continuum.io/downloads">Anaconda distribution</a>.
+The Python implementations of <tt>rand_mat_stat</tt> and <tt>rand_mat_mul</tt>
+use NumPy (v1.9.2) functions; the rest are pure Python implementations.<br/>
+Benchmarks can also be seen <a href="/benchmarks/">here as a plot</a> created
+with <a href="https://github.com/dcjones/Gadfly.jl">Gadfly</a>.
 </p>
 </div>
 
 These benchmarks, while not comprehensive, do test compiler performance on a range of common code patterns, such as function calls, string parsing, sorting, numerical loops, random number generation, and array operations.
 It is important to note that these benchmark implementations are not written for absolute maximal performance (the fastest code to compute `fib(20)` is the constant literal `6765`).
-Rather, all of the benchmarks are written to test the performance of specific algorithms, expressed in a reasonable idiom in each language.
-In particular, all languages use the same algorithm: the Fibonacci benchmarks are all recursive while the pi summation benchmarks are all iterative; the "algorithm" for random matrix multiplication is to call LAPACK, except where that's not possible, such as in JavaScript.
+Rather, all of the benchmarks are written to test the performance of specific algorithms implemented in each language.
+In particular, all languages use the same algorithm: the Fibonacci benchmarks are all recursive while the pi summation benchmarks are all iterative; the "algorithm" for random matrix multiplication is to call the most obvious built-in/standard random-number and matmul routines (or to directly call BLAS if the language does not provide a high-level matmul), except where a matmul/BLAS call is not possible (such as in JavaScript).
 The point of these benchmarks is to compare the performance of specific *algorithms* across language implementations, not to compare the fastest means of computing a result, which in most high-level languages relies on calling C code.
 Raw benchmark numbers in CSV format are available [here](/benchmarks.csv).
 
@@ -115,7 +133,7 @@ The following simple example demonstrates how to count the number of heads in a 
 
 {% highlight julia %}
 nheads = @parallel (+) for i=1:100000000
-  int(randbool())
+  rand(Bool)
 end
 {% endhighlight %}
 
@@ -138,6 +156,6 @@ The core of the Julia implementation is licensed under the [MIT license](http://
 Various libraries used by the Julia environment include their own licenses such as the [GPL](http://en.wikipedia.org/wiki/GNU_General_Public_License), [LGPL](http://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License), and [BSD](http://en.wikipedia.org/wiki/BSD_licenses)
 (therefore the environment, which consists of the language, user interfaces, and libraries, is under the GPL).
 The language can be built as a shared library, so users can combine Julia with their own C/Fortran code or proprietary third-party libraries.
-Furthermore, Julia makes it [simple to call external functions](http://docs.julialang.org/en/release-0.3/manual/calling-c-and-fortran-code/) in C and Fortran shared libraries, without writing any wrapper code or even recompiling existing code.
+Furthermore, Julia makes it [simple to call external functions](http://docs.julialang.org/en/stable/manual/calling-c-and-fortran-code/) in C and Fortran shared libraries, without writing any wrapper code or even recompiling existing code.
 You can try calling external library functions directly from Julia's interactive prompt, getting immediate feedback.
 See [LICENSE](https://github.com/JuliaLang/julia/blob/master/LICENSE.md) for the full terms of Julia's licensing.

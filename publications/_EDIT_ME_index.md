@@ -40,6 +40,10 @@ requests](https://github.com/JuliaLang/julialang.github.com/).
 
 [@LD13]
 
+### [SwitchTimeOpt.jl](https://github.com/bstellato/SwitchTimeOpt.jl)
+
+[@SOG16]
+
 ## Numerical linear algebra
 
 ### [ApproxFun.jl](https://github.com/ApproxFun/ApproxFun.jl)
@@ -48,9 +52,21 @@ requests](https://github.com/JuliaLang/julialang.github.com/).
 
 [@OT14]
 
+### [Arrowhead.jl](https://github.com/ivanslapnicar/Arrowhead.jl)
+
+[@JSB15]
+
+[@JSB15a]
+
+[@JS15]
+
 ### [RandomMatrices.jl](https://github.com/jiahao/RandomMatrices.jl)
 
 [@ONT14]
+
+### [MatrixDepot.jl](https://github.com/weijianzhang/MatrixDepot.jl)
+
+[@ZH15]
 
 ## Numerical quadrature
 
@@ -63,6 +79,10 @@ requests](https://github.com/JuliaLang/julialang.github.com/).
 [@TTO14]
 
 # Technical computing applications
+
+[@HPOEPP16] Code available in [CellwiseEditingDifferentiation.jl](https://github.com/scidom/CellwiseEditingDifferentiation.jl).
+
+[@OPV16]
 
 [@K14]
 
@@ -94,7 +114,8 @@ requests](https://github.com/JuliaLang/julialang.github.com/).
 
 # Book chapters
 
+[@PMG15]
+
 [@HN14]
 
 [@TDDM14]
-

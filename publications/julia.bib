@@ -1,3 +1,80 @@
+@article{SOG16,
+  Title                    = {Second-Order Switching Time Optimization for Switched Dynamical Systems},
+  Author                   = {{Stellato}, B. and {Ober-Bl{\"o}baum}, S. and {Goulart}, P.~J.},
+  Year                     = {2016},
+  Month                    = {August},
+  Eprintclass = {math.OC},
+  Eprinttype = {arXiv},
+  Eprint = {1608.08597},
+  Abstract                 = {Switching time optimization arises in finite-horizon optimal control for switched systems where, given a sequence of continuous dynamics, one minimizes a cost function with respect to the switching times. We propose an efficient method for computing the optimal switching times for switched linear and nonlinear systems. A novel second-order optimization algorithm is introduced where, at each iteration, the dynamics are linearized over an underlying time grid to compute the cost function, the gradient and the Hessian efficiently. With the proposed method, the most expensive operations at each iteration are shared between the cost function and its derivatives, thereby greatly reducing the computational burden. We implemented the algorithm in the Julia package SwitchTimeOpt allowing the user to easily solve switching time optimization problems. In the case of linear dynamics, many operations can be further simplified and benchmarks show that our approach is able to provide optimal solutions in just a few ms. In the case of nonlinear dynamics, two examples show that our method provides optimal solutions with up to two orders of magnitude time reductions over state-of-the-art approaches.}
+  }
+
+@Article{HPOEPP16,
+  author =  {Dewi Harjanto and Theodore Papamarkou and Chris J. Oates and Violeta Rayon-Estrada and F. Nina Papavasiliou and Anastasia Papavasiliou},
+  title =   {RNA editing generates cellular subsets with diverse sequence within populations},
+  journal = {Nature Communications},
+  year =    {2016},
+  volume =  {7},
+  number =  {12145},
+  month =   {July}
+}
+
+@article{OPV16,
+	Abstract = {The Green's function method has applications in several fields in Physics, from classical differential equations to quantum many-body problems. In the quantum context, Green's functions are correlation functions, from which it is possible to extract information from the system under study, such as the density of states, relaxation times and response functions. Despite its power and versatility, it is known as a laborious and sometimes cumbersome method. Here we introduce the equilibrium Green's functions and the equation-of-motion technique, exemplifying the method in discrete lattices of non-interacting electrons. We start with simple models, such as the two-site molecule, the infinite and semi-infinite one-dimensional chains, and the two-dimensional ladder. Numerical implementations are developed via the recursive Green's function, implemented in Julia, an open-source, efficient and easy-to-learn scientific language. We also present a new variation of the surface recursive Green's function method, which can be of interest when simulating simultaneously the properties of surface and bulk.},
+	Author = {Mariana M. Odashima, Beatriz G. Prado, and E. Vernek},
+	Title = {Introduction to the equilibrium Green's functions: condensed matter examples with numerical implementations},
+	Eprinttype = {arXiv},
+	Eprint = {1604.02499},
+	Pages = {1-20},
+	Year = {2016}
+	}
+
+@article{JSB15,
+	Abstract = {We present a new algorithm for solving the eigenvalue problem
+for an n × n real symmetric arrowhead matrix. The algorithm
+computes all eigenvalues and all components of the corresponding
+eigenvectors with high relative accuracy in O(n^2) operations under
+certain circumstances. The algorithm is based on a shift-and-invert
+approach. Only a single element of the inverse of the shifted
+matrix eventually needs to be computed with double the working
+precision. Each eigenvalue and the corresponding eigenvector can
+be computed separately, which makes the algorithm adaptable for
+parallel computing. Our results extend to Hermitian arrowhead
+matrices, real symmetric diagonal-plus-rank-one matrices and
+singular value decomposition of real triangular arrowhead matrices.},
+	Author = {N. Jakovcevic Stor, I. Slapnicar and J. L. Barlow},
+	Title = {Accurate eigenvalue decomposition of real
+symmetric arrowhead matrices and applications},
+	Journal = {Linear Algebra and Its Applications},
+	Volume = {464},
+	Pages = {62-89},
+	Year = {2015},
+	Doi = {10.1016/j.laa.2013.10.007},
+	URL = {http://www.sciencedirect.com/science/article/pii/S0024379513006265}
+}
+
+@article{JSB15a,
+	Abstract = {We present a new algorithm for solving an eigenvalue problem for a real symmetric matrix which is a rank-one modification of a diagonal matrix. The algorithm computes each eigenvalue and all components of the corresponding eigenvector with high relative accuracy in O(n) operations. The algorithm is based on a shift-and-invert approach. Only a single element of the inverse of the shifted matrix eventually needs to be computed with double the working precision. Each eigenvalue and the corresponding eigenvector can be computed separately, which makes the algorithm adaptable for parallel computing. Our results extend to the complex Hermitian case. The algorithm is similar to the algorithm for solving the eigenvalue problem for real symmetric arrowhead matrices from N. Jakovčević Stor et al. (2015) [16].},
+	Author = {N. Jakovcevic Stor, I. Slapnicar and J. L. Barlow},
+	Title = {Forward stable eigenvalue decomposition of rank-one modifications of diagonal matrices},
+	Journal = {Linear Algebra and Its Applications},
+	Volume = {487},
+	Pages = {301-315},
+	Year = {2015},
+	Doi = {10.1016/j.laa.2015.09.025},
+	URL = {http://www.sciencedirect.com/science/article/pii/S0024379515005406}
+}
+
+@article{JS15,
+	Abstract = {As showed in (Fiedler, 1990), any polynomial can be expressed as a characteristic polynomial of a complex symmetric arrowhead matrix. This expression is not unique. If the polynomial is real with only real distinct roots, the matrix can be chosen real. By using accurate forward stable algorithm for computing eigenvalues of real symmetric arrowhead matrices from (Jakovcevic Stor, Slapnicar, Barlow, 2015), we derive a forward stable algorithm for computation of roots of such polynomials in O(n2) operations. The algorithm computes each root to almost full accuracy. In some cases, the algorithm invokes extended precision routines, but only in the non-iterative part. Our examples include numerically difficult problems, like the well-known Wilkinson's polynomials. Our algorithm compares favourably to other method for polynomial root-finding, like MPSolve or Newton's method.},
+	Author = {N. Jakovcevic Stor and I. Slapnicar},
+	Title = {Forward stable computation of roots of real polynomials with only real distinct roots},
+	Eprinttype = {arXiv},
+	Eprint = {1509.06224},
+	Pages = {1-15},
+	Year = {2015}
+	}
+
 @article{MH15,
 	Abstract = {Background: Establishing health-related causal relationships is a central pursuit in biomedical research. Yet, the interdependent non-linearity of biological systems renders causal dynamics laborious and at times impractical to disentangle. This pursuit is further impeded by the dearth of time series that are sufficiently long to observe and understand recurrent patterns of flux. However, as data generation costs plummet and technologies like wearable devices democratize data collection, we anticipate a coming surge in the availability of biomedically-relevant time series data. Given the life-saving potential of these burgeoning resources, it is critical to invest in the development of open source software tools that are capable of drawing meaningful insight from vast amounts of time series data.
 
@@ -10,6 +87,17 @@
 	Eprint = {3:e1053},
 	Eprinttype = {PeerJ PrePrints},
 	Doi = {10.7287/peerj.preprints.583v2},
+}
+
+@InBook{PMG15,
+  chapter =   {22},
+  pages =     {457-476},
+  title =     {Monte Carlo Methods and Zero Variance Principle},
+  publisher = {Chapman and Hall/CRC},
+  year =      {2015},
+  author =    {Theodore Papamarkou and Antonietta Mira and Mark Girolami},
+  editor =    {Satyanshu K. Upadhyay and Umesh Singh and Dipak K. Dey and Appaia Loganathan},
+  volume =    {Current Trends in Bayesian Methodology with Applications}
 }
 
 @inproceedings{K14,
@@ -364,3 +452,31 @@ doi={10.1109/HPEC.2013.6670347}
 	the trace transform.}
 }
 
+@techreport{ZH15,
+author={Zhang, Weijian and Higham, Nicholas J.},
+title={Matrix Depot: An Extensible Test Matrix Collection for Julia},
+institution={Manchester Institute for Mathematical Sciences, The
+                   University of Manchester},
+journal={MIMS EPrint},
+pages={25},
+number={2015.118},
+year={2015},
+month={Dec},
+url={http://eprints.ma.man.ac.uk/2426},
+abstract = { Matrix Depot is a Julia software package that provides
+                  easy access to a large and diverse collection of
+                  test matrices. Its novelty is threefold. First, it
+                  is extensible by the user, and so can be adapted to
+                  include the user’s own test problems. In doing so it
+                  facilitates experimentation and makes it easier to
+                  carry out reproducible research. Second, it
+                  amalgamates in a single framework three different
+                  types of matrix collections, comprising parametrized
+                  test matrices, regularization test problems, and
+                  real-life sparse matrix data. Third, it fully
+                  exploits the Julia language. It uses multiple
+                  dispatch to help provide a simple interface and, in
+                  particular, to allow matrices to be generated in any
+                  of the numeric data types supported by the language.
+                  }
+}

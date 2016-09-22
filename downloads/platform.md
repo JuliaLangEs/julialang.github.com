@@ -11,15 +11,15 @@ Julia is available for both 32-bit and 64-bit Windows since XP SP2.
 
 1. Download the Windows julia.exe installer for your platform. 32-bit julia works on both x86 and x86_64. 64-bit julia will only run on 64-bit Windows (x86_64).
 2. Run the downloaded program to extract julia
-3. Double-click julia.bat in the unpacked folder to start julia
+3. Double-click the julia shortcut in the unpacked folder to start julia
 
 The [Windows README](https://github.com/JuliaLang/julia/blob/master/README.windows.md) contains information on dependencies.
 
 Uninstallation is performed by deleting the extracted directory and the packages directory in `%HOME%/.julia`. If you would also like to remove your preferences files, remove `%HOME%/.juliarc.jl` and `%HOME%/.julia_history`.
 
-## OS X
+## macOS
 
-On Mac, a Julia-version.dmg file is provided, which contains Julia.app. Installation is the same as any other Mac software -- copy the Julia.app to your hard-drive (anywhere) or run from the disk image. Julia supports all OS X 10.7 and later. If you use Snow Leopard (OSX 10.6), Julia 0.2.1 was the last release of Julia that supported it.
+On Mac, a Julia-version.dmg file is provided, which contains Julia.app. Installation is the same as any other Mac software -- copy the Julia.app to your hard-drive (anywhere) or run from the disk image. Julia supports all OS X 10.7 and later. If you use Snow Leopard (OS X 10.6), Julia 0.2.1 was the last release of Julia that supported it.
 
 Uninstall Julia by deleting Julia.app and the packages directory in ~/.julia. Multiple Julia.app binaries can co-exist without interfering with each other. If you would also like to remove your preferences files, remove `~/.juliarc.jl`.
 
@@ -80,6 +80,6 @@ New versions are built every night. If you have already installed julia and you 
 
     sudo yum upgrade julia
 
-## Unininstalling Julia
+## Uninstalling Julia
 
 Uninstallation depends on the method you used to install Julia. If you installed from a package manager such as `apt-get` or `yum`, use the package manager to remove julia, for example `apt-get remove julia` or `yum remove julia`. If you did a source build, you can remove it by deleting your julia source folder. If you would also like to remove your preferences files, they are `~/.julia` and `~/.juliarc.jl`.
