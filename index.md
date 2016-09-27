@@ -159,3 +159,7 @@ The language can be built as a shared library, so users can combine Julia with t
 Furthermore, Julia makes it [simple to call external functions](http://docs.julialang.org/en/stable/manual/calling-c-and-fortran-code/) in C and Fortran shared libraries, without writing any wrapper code or even recompiling existing code.
 You can try calling external library functions directly from Julia's interactive prompt, getting immediate feedback.
 See [LICENSE](https://github.com/JuliaLang/julia/blob/master/LICENSE.md) for the full terms of Julia's licensing.
+
+<a target="_blank" style="text-decoration:none; color:black; font-size:66%" href="/projects/p/undefined/resource/httpjulialangorg/" 
+title="See more information on Transifex.com">Top translations: undefined » httpjulialangorg</a><br/>
+<img border="0" src="/projects/p/undefined/resource/httpjulialangorg/chart/image_png"/><br/><a target="_blank" href="/"><img border="0" src="https://tx-assets.scdn5.secure.raxcdn.com/static/charts/images/tx-logo-micro.c5603f91c780.png"/></a>
