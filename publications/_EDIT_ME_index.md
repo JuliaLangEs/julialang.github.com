@@ -22,6 +22,10 @@ requests](https://github.com/JuliaLang/julialang.github.com/).
 
 # Publications relating to Julia packages
 
+## [Flows.jl](https://github.com/HaraldHofstaetter/Flows.jl)
+
+[@AHK16]
+
 ## [CauseMap.jl](https://github.com/cyrusmaher/CauseMap.jl)
 
 [@MH15]
@@ -107,6 +111,10 @@ requests](https://github.com/JuliaLang/julialang.github.com/).
 [@SEKBK13]
 
 [@BZFPZWP14] Code available in [GaussDCA.jl](https://github.com/carlobaldassi/GaussDCA.jl).
+
+[@RZRB16]
+
+[@RSLLBHGL16]
 
 # Theses
 
